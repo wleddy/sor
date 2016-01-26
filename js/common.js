@@ -12,6 +12,14 @@ var standardFormID = "#StandardTicketsFormPP";
 var earlyBirdBuyButtonID = "#earlyBuyButton"
 var standardBuyButtonID = "#standardBuyButton"
 
+// set up the date and time strings
+function getEventDate(){
+	return "Sunday, September 18, 2016";
+}
+function getEventTime(){
+	return "4:00 PM to 7:00 PM";
+}
+
 function isEarly() {
 	// hide the out of date ticket form
 	var now = new Date();

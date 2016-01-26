@@ -4,15 +4,15 @@
 	
 	$request = "";
 	$request .= "Dear " . $customerName .  ",\n\n";
-	$request .= "We're excited that you'll be joining us for Safari on the River on";
-	$request .= " July 20th! It will be a fun event supporting a great cause.\n\n";
+	$request .= "We're excited that you'll be joining us for Safari on the River!";
+	$request .= " It will be a fun event supporting a great cause.\n\n";
 	$request .= "Your ticket";
 	if($tickCnt > 1) {
 		$request .= "s";
 	}
 	$request .= " will be waiting for you at Will Call when the event";
-	$request .= " begins at 4:30.\n\n";
-	$request .= "(You'll get two confirmation emails from PayPal, one saying that";
+	$request .= " begins at 4:00.\n\n";
+	$request .= "(You may get two confirmation emails from PayPal, one saying that";
 	$request .= " your \"item was shipped\" but that just means we've processed your order.)\n\n";
 	$request .= "If you have any questions, please contact SafariTeam@AfricaHopeFund.org. Thanks";
 	$request .= " again for your support and we look forward to sharing this fun event with you!\n\n";
@@ -29,7 +29,7 @@
 	}
 	
 	$request = stripslashes($request);
-	require_once($_SERVER['DOCUMENT_ROOT'].'/config.php');
+	require_once('config.php');
 	// $site array now exists
 	$site['from_email'] = 'safariteam@africahopefund.org'; // default in /config.php
 	$site['from_name'] = 'Safari On The River'; // default in /config.php
@@ -42,8 +42,8 @@
 	$site['subject'] = "Safari on the River Ticket Confirmation";
 	$site['body'] = $request;
 	// handle mail sending
-	// Grab the FreakMailer class 
-	require_once($site['config_library'].'/MailClass.inc'); 
+	// Grab the FreakMailer class (already imported)
+	//require_once($site['config_library'].'/MailClass.inc'); 
 	
 	// instantiate the class 
 	$mailer = new FreakMailer(); 

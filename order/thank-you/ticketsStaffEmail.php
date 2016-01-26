@@ -1,4 +1,5 @@
 <?php
+	require_once('config.php');
 	// web links in the comment means it's probably spam
 	$request = "Ticket Order submitted from web site: " . date("F j, Y - g:i a") . "\n\n";
 	$customerName = $_POST['customer_first'] . " " . $_POST['customer_last'];
@@ -21,7 +22,6 @@
 		$request .= "  " . $GuestNo . ': ' . $_POST[$guestFirst] . " " . $_POST[$guestLast] . "\n";
 	}
 	$request = stripslashes($request);
-	require_once($_SERVER['DOCUMENT_ROOT'].'/config.php');
 	// $site array now exists
 	$site['from_email'] = 'safariteam@africahopefund.org'; // default in /config.php
 	$site['from_name'] = 'Safari On The River'; // default in /config.php
@@ -37,7 +37,7 @@
 	
 	// handle mail sending
 	// Grab the FreakMailer class 
-	require_once($site['config_library'].'/MailClass.inc'); 
+	//require_once($site['config_library'].'/MailClass.inc'); 
 	
 	// instantiate the class 
 	$mailer = new FreakMailer(); 
