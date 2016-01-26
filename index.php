@@ -5,7 +5,7 @@ $pageTitle = 'Safari on the River';
 ## Add items to the header if needed
 #$extraCSS = '';
 #$extraHeaders = '';
-#$extraJS = '';
+#$extraJS = ''
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/templates/base.php'); 
 

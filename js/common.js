@@ -6,7 +6,7 @@ var $j = jQuery;
 
 // the earlyBird end date. Used in various functions
 // the date constructor assumes the months are numbered 0-11, days are numbered 1-31
-var expires = new Date(2014,5,2) // June 2nd 
+var expires = new Date(2016,8,18) // June 2nd 
 var earlyBirdFormContainID = "#EarlybirdTicketsForm";
 var standardFormContainID = "#StandardTicketsForm";
 var earlyBirdFormID = "#EarlybirdTicketsFormPP";

@@ -1,4 +1,266 @@
-<div id="sales-closed">
-	<h2>On-line Ticket Sales Are Not Open Yet</h2>
-	<p>Sales will start in June</p>
-</div>
+<!-- emailmeform Styles -->
+<link rel="stylesheet" type="text/css" href="http://www.emailmeform.com/builder/theme_css/Rdsd6MSo8p0w7g">
+
+<!-- emailmeform header stuff -->
+	<link rel="stylesheet" type="text/css" href="//assets.emailmeform.com/styles/dynamic.php?t=post&amp;enable_responsive_ui=1&amp;RU1GLTAyLTE3LTk5NTU%3D">
+	<style type="text/css">
+		#emf-container {padding:6pt;}
+		@media screen and (max-width: 556px) {#emf-container,#emf-container-outer #emf-form-shadows {width: 100%;} }
+		/* make the guest fields flow better */
+		#emf-container ul li.emf-li-half-width {
+		    width: 39%
+		}
+		#emf-container #emf-form {
+			padding-top:0;
+		}
+	</style>
+
+<div id="emf-container-outer">
+	<div id="emf-container" style="margin:0 auto;width:100%">
+	<div id="ticketForm">
+		<div id="EarlybirdTicketsForm">
+			<!-- Earlybird Tickets -->
+			<form id="EarlybirdTicketsFormPP" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="2Z9UE5PSVQFLN">
+			<table>
+			<tr>
+				<td><input type="hidden" name="on0" value="SOR Tickets">
+				
+					<h1>Buy Tickets</h1>
+					<p class="fineprint">
+						<em>(Earlybird pricing ends August 18)</em><br>
+						Select the number of tickets you wish to order:
+					</p>
+			</td></tr><tr><td><select name="os0" id="earlySelect" onChange="orderQtySelect(this);">
+				<option value="1 Ticket">1 Ticket $90.00 USD</option>
+				<option value="2 Tickets">2 Tickets $180.00 USD</option>
+				<option value="3 Tickets">3 Tickets $270.00 USD</option>
+				<option value="4 Tickets">4 Tickets $360.00 USD</option>
+				<option value="5 Tickets">5 Tickets $450.00 USD</option>
+				<option value="6 Tickets">6 Tickets $540.00 USD</option>
+				<option value="7 Tickets">7 Tickets $630.00 USD</option>
+				<option value="8 Tickets">8 Tickets $720.00 USD</option>
+				<option value="9 Tickets">9 Tickets $810.00 USD</option>
+				<option value="10 Tickets">10 Tickets $900.00 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" style="display:none;" id="earlyBuyButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+		<div id="StandardTicketsForm">
+			<!-- Standard Tickets -->
+			<form id="StandardTicketsFormPP" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="XRV3676WVT5JJ">
+			<table>
+				<tr>
+					<td><input type="hidden" name="on0" value="SOR Tickets">
+					<h1>Buy Tickets</h1>
+						<p class="fineprint">
+							Select quantity, then click &quot;Buy Now&quot;
+						</p>
+			</td></tr><tr><td><select name="os0" id="standardSelect" onChange="orderQtySelect(this);">
+				<option value="1 Ticket">1 Ticket $100.00 USD</option>
+				<option value="2 Tickets">2 Tickets $200.00 USD</option>
+				<option value="3 Tickets">3 Tickets $300.00 USD</option>
+				<option value="4 Tickets">4 Tickets $400.00 USD</option>
+				<option value="5 Tickets">5 Tickets $500.00 USD</option>
+				<option value="6 Tickets">6 Tickets $600.00 USD</option>
+				<option value="7 Tickets">7 Tickets $700.00 USD</option>
+				<option value="8 Tickets">8 Tickets $800.00 USD</option>
+				<option value="9 Tickets">9 Tickets $900.00 USD</option>
+				<option value="10 Tickets">10 Tickets $1,000.00 USD</option>
+			</select> </td></tr>
+			</table>
+			<input type="hidden" name="currency_code" value="USD">
+			<input type="image" style="display:none;" id="standardBuyButton"  src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+	</div> <!-- end ticket forms -->
+	    <div class="emf-error-message" style='display:none'></div>
+	    <form id="customer_form" target="_self" class="topLabel" enctype="multipart/form-data" method="post" action="http://www.leddyconsulting.com" onsubmit="return submitOrder();">
+	<input type="hidden" id="ticketQty" name="ticketQty" value="1">
+	      <ul>
+	          <li id="emf-li-0" class="emf-li-field emf-field-new_name data_container emf-li-half-width cell_align_left">
+	            <label class="emf-label-desc" for="element_0">Your Name</label>
+	            <div class="emf-div-field">
+	              <span style="width:60px">
+						<input class="validate[required]" style="width:100%" value="" id="customer_first" name="customer_first" type="text"> 
+						<label for="customer_first" class="emf-bottom-label emf-text-center">First</label></span> 
+						<span style="width:100px"><input class="validate[required]" style="width:100%" value="" id="customer_last" name="customer_last" type="text"> <label for="customer_last" class="emf-bottom-label emf-text-center">Last</label></span>
+	            </div>
+	            <div class="emf-clear"></div>
+	          </li>
+	          <li id="emf-li-5" class="emf-li-field emf-field-email data_container emf-li-half-width cell_align_left">
+	            <label class="emf-label-desc" for="customer_email">Email <span class="fineprint" style="color:red;font-weight:normal;">(required)</span></label>
+	            <div class="emf-div-field">
+	              <input id="customer_email" name="customer_email" class="validate[optional,custom[email]]" value="" size="30" type="text">
+	            </div>
+	            <div class="emf-clear"></div>
+	        </li>
+	        <li id="emf-li-55" class="">
+	          <label class="emf-label-desc" for="element_55">Additional question or comments</label>
+	          <div class="emf-div-field">
+	            <textarea id="customer_comment" name="customer_comment" style="width:99%" rows="5" class="validate[optional]"></textarea>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-0" class="guestName">
+	          <div class="emf-div-field-section">
+	            <h2 id="element_8" name="element_8">Your Guests</h2>
+	            <div class="emf-section-text">
+			<p class="fineprint">
+				If you know who your guests will be,
+				please enter their names below so we can welcome them properly and register
+				them quickly. If you don't know, no worries! You can also send us that
+				information later: <a href="mailto:safariteam@africahopefund.org">SafariTeam@AfricaHopeFund.org</a>. Thank you!
+			</p>
+	            </div>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+
+	        <li id="guestName-1" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst1" name="guestFirst1" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast1" name="guestLast1" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-2" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst2" name="guestFirst2" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast2" name="guestLast2" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-3" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst3" name="guestFirst3" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast3" name="guestLast3" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-4" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst4" name="guestFirst4" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast4" name="guestLast4" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-5" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst5" name="guestFirst5" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast5" name="guestLast5" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-6" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst6" name="guestFirst6" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast6" name="guestLast6" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-7" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst7" name="guestFirst7" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast7" name="guestLast7" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-8" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst8" name="guestFirst8" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast8" name="guestLast8" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+	        <li id="guestName-9" class="guestName ">
+	          <label class="emf-label-desc" for="element_9">Guest Name</label>
+	          <div class="emf-div-field">
+			<span style="width:60px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestFirst9" name="guestFirst9" type="text"> 
+				<label for="element_11" class="emf-bottom-label emf-text-center">First</label>
+			</span> 
+			<span style="width:100px">
+				<input class="validate[optional]" style="width:100%" value="" id="guestLast9" name="guestLast9" type="text"> 
+				<label for="element_12" class="emf-bottom-label emf-text-center">Last</label>
+			</span>
+	          </div>
+	          <div class="emf-clear"></div>
+	        </li>
+			<li id="emf-li-post-button" class="right">
+				<span class="fineprint" >Order securely with PayPal: </span><br><input type="image"  id="orderSubmit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			</li>
+	      </ul>
+	    </form>
+	  </div>
+</div> <!-- End email form -->
+
+<script type="text/javascript">
+	// hide all guest name fields at start
+	displayGuestInput(0);
+</script>
+
+<style>body{background-color:black;}</style>
