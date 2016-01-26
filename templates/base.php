@@ -90,7 +90,7 @@ foreach($htmlContainers as $baseName => $x_value){
 		    echo('<script type="text/javascript" src="'.$js.'" ></script>');
 		    }
 		?>
-		<script type="text/javascript" >$j(document).ready(function(){doReady();});</script>
+		<script type="text/javascript" >$(document).ready(function(){doReady();});</script>
 		<?php echo($extraJS);?>
 		
 		<link rel="stylesheet" href="/css/default.css" type="text/css" media="all" >
