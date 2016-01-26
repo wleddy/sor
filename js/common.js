@@ -4,7 +4,7 @@
 
 // the earlyBird end date. Used in various functions
 // the date constructor assumes the months are numbered 0-11, days are numbered 1-31
-var expires = new Date(2016,8,18) // June 2nd 
+var expires = new Date(2013,(6-1),2) // for 2016, no early bird pricing, so set it in the past
 var earlyBirdFormContainID = "#EarlybirdTicketsForm";
 var standardFormContainID = "#StandardTicketsForm";
 var earlyBirdFormID = "#EarlybirdTicketsFormPP";
