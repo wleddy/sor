@@ -1,0 +1,13 @@
+/* css for order page */
+
+#emf-container {padding:6pt;}
+/* small screen */
+@media screen and (max-width: 556px) {#emf-container,#emf-container-outer #emf-form-shadows {width: 100%;} }
+
+/* make the guest fields flow better */
+#emf-container ul li.emf-li-half-width {
+    width: 39%
+}
+#emf-container #emf-form {
+	padding-top:0;
+}
