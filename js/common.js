@@ -17,7 +17,7 @@ function getEventDate(){
 	return "Sunday, September 18, 2016";
 }
 function getEventTime(){
-	return "4:00 PM to 7:00 PM";
+	return "4:00 PM to 7:30 PM";
 }
 
 function isEarly() {
