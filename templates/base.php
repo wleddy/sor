@@ -131,6 +131,7 @@ foreach($htmlContainers as $baseName => $x_value){
 		} 
 	}
 ?>
+    <p class="clear">&nbsp;</p>
     </div>
     </body>
 </html>
