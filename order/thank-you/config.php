@@ -1,7 +1,12 @@
 
 <?php 
 // Set the path to global settings 
-$site['config_library'] = $_SERVER['DOCUMENT_ROOT'].'../lib'; // always one dir down from Document Root
+// the trailing slash from $_SERVER['DOCUMENT_ROOT'] is not consistently present 
+//   depending on the server config
+$rootPath = $_SERVER['DOCUMENT_ROOT']."/"; // Ensure there is a trailing slash in Doc Root
+$rootPath = str_replace ("//", "/", $rootPath); //Now ensure that there are not 2 trailing slashes
+
+$site['config_library'] = $rootPath.'../lib'; // always one dir down from Document Root
 $site['config_global_settings'] = $site['config_library'].'/config.php'; // Inside the config_library dir
 
 // get system wide settings 
