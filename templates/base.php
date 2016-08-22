@@ -14,8 +14,11 @@ function prepPath($path){
     # ensure that path has a leading "/" and no trailing "/"
     // also strip off the query string if any
     $queryStart = strpos($path,'?');
-    if (($queryStart) & ($queryStart > 0)) {
+    if (!$queryStart) $queryStart = 0;
+    echo('pos '.$queryStart);
+    if ( ($queryStart > 0)) {
         $path = substr($path,0,$queryStart);
+        echo($path);
     }
     
     if(substr($path,0,1) != "/"){
@@ -33,6 +36,8 @@ function prepPath($path){
     This change allows you to name the main content file after the enclosing directory name
 */
 $requestURI = prepPath($_SERVER['REQUEST_URI']);
+//$requestURI = prepPath($_SERVER['PATH_INFO']);
+echo('<p style="font-color:white;">'.$requestURI."</p>");
 $docRoot = prepPath($_SERVER['DOCUMENT_ROOT']);
 
 #ensure that there is a trailing '/' in $requestURI
