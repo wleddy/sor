@@ -12,6 +12,12 @@ use \Michelf\Markdown;
 
 function prepPath($path){
     # ensure that path has a leading "/" and no trailing "/"
+    // also strip off the query string if any
+    $queryStart = strpos($path,'?');
+    if (($queryStart) & ($queryStart > 0)) {
+        $path = substr($path,0,$queryStart);
+    }
+    
     if(substr($path,0,1) != "/"){
         $path = "/" + $path;
     }
