@@ -21,6 +21,10 @@ $extraCSS = '
     </style>
 
 ';
+
+# Turn off the email for me formatting now that ordering is turned off
+$extraCSS = '';
+
 #$extraHeaders = '';
 #$extraJS = '';
 

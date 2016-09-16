@@ -247,5 +247,3 @@
 	// hide all guest name fields at start
 	displayGuestInput(0);
 </script>
-
-<style>body{background-color:black;}</style>
