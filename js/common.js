@@ -14,10 +14,10 @@ var standardBuyButtonID = "#standardBuyButton"
 
 // set up the date and time strings
 function getEventDate(){
-	return "Sunday, September 18, 2016";
+	return "Sunday, August 26th, 2018";
 }
 function getEventTime(){
-	return "4:00 PM to 7:30 PM";
+	return "4:30 PM to 8:30 PM";
 }
 
 function isEarly() {
