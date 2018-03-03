@@ -18,16 +18,10 @@ c/o Carol Van Bruggen<br>
 Sacramento, CA 95815<br>
 </div>
 
-<div id="donationForm">
-	<p>Can't attend, but want to help?</p>
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="EC824ECVWUYQS">
-	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-</div>
-<p class="caption"><b>Africa Hope Fund is a 501c3<br>EIN #26-4484055</b></p>
+<p style="margin:10pt 0 0 0;" >Can't attend, but want to help?</p>
+<?php
+	include( $_SERVER['DOCUMENT_ROOT'] . "/donor/payPal-button.html");
+?>
 
 <div id="sponsor-logos">
 	<h3>Our Sponsors:</h3>
