@@ -87,7 +87,7 @@ foreach($htmlContainers as $baseName => $x_value){
         <title><?php echo($pageTitle);?> - <?php echo($SiteName)?></title>
 		<link rel="icon" type="image/png" href="/images/favoricon.png" >
 	    <link rel="SHORTCUT ICON" type="image/vnd.microsoft.icon" href="/images/favricon.ico" >
-		<?php echo($extraHeaders);?>
+		<?php if(isset($extraHeaders)) echo($extraHeaders);?>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="/js/common.js" ></script>
@@ -98,7 +98,7 @@ foreach($htmlContainers as $baseName => $x_value){
 		    }
 		?>
 		<script type="text/javascript" >$(document).ready(function(){doReady();});</script>
-		<?php echo($extraJS);?>
+		<?php if(isset($extraJS)) echo($extraJS);  ?>
 		
 		<link rel="stylesheet" href="/css/default.css" type="text/css" media="all" >
 		<?php
@@ -119,7 +119,7 @@ foreach($htmlContainers as $baseName => $x_value){
 		if(($htmlContainers[$baseName]['filepath'] != '') || ($htmlContainers[$baseName]['text'] != '')) {
 		    $divID = $baseName;
 		    ## only the $localFile element contains the 'id' element
-		    if ($htmlContainers[$baseName]['id']) {
+		    if (array_key_exists('id',$htmlContainers[$baseName])) {
         	    $divID = $htmlContainers[$baseName]['id'];
         	    $useLocalDir = true;
         	}
