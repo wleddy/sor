@@ -20,6 +20,17 @@ function getEventTime(){
 	return "4:30 PM to 8:30 PM";
 }
 
+function getEventLocation(){
+    return "(Loction to be announced)";
+}
+
+function getEventMapURL(){
+    $mapURL = '';
+    //$mapURL = 	'<a href="http://maps.google.com/maps?q=1951+Garden+Highway,+Sacramento,+CA&oe=utf-8&hnear=1951+Garden+Hwy,+Sacramento,+California+95833&gl=us&t=m&z=16" target="_blank">(map)</a>';
+    
+    return $mapURL;
+}
+
 function isEarly() {
 	// hide the out of date ticket form
 	var now = new Date();
