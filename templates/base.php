@@ -85,8 +85,8 @@ foreach($htmlContainers as $baseName => $x_value){
 <html>
     <head>
         <title><?php echo($pageTitle);?> - <?php echo($SiteName)?></title>
-		<link rel="icon" type="image/png" href="/images/favoricon.png" >
-	    <link rel="SHORTCUT ICON" type="image/vnd.microsoft.icon" href="/images/favricon.ico" >
+		<link rel="icon" type="image/png" href="/images/favicon.png" >
+	    <link rel="SHORTCUT ICON" type="image/vnd.microsoft.icon" href="/images/favicon.ico" >
 		<?php if(isset($extraHeaders)) echo($extraHeaders);?>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
