@@ -1,5 +1,5 @@
 <div class="leftnav">
-<a href="/help/">Want to Help?</a><br>
+<a href="/donor/">Want to Help?</a><br>
 <a href="/contact/">Contact Us</a><br>
 <a href="/photos/">Photo Gallery</a><br><br>
 </div>
@@ -8,7 +8,6 @@
 	<a href="/order/">Order Tickets...</a><br>
 	<a href="/sponsors/">Become a Sponsor...</a>
 </div>
-<!--<p class="caption"></p>-->
 
 <div id="mailPayment" >
 <b>Mail in payment:</b><br>
