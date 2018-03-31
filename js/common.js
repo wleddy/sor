@@ -21,7 +21,7 @@ function getEventTime(){
 }
 
 function getEventLocation(){
-    return "(Loction to be announced)";
+    return "(Location to be announced)";
 }
 
 function getEventMapURL(){
