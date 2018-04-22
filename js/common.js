@@ -21,11 +21,11 @@ function getEventTime(){
 }
 
 function getEventLocation(){
-    return "(Location to be announced)";
+    return "The estate of Maggie Ferrari<br>3333 Sunnybank Lane<br>Carmichael, CA";
 }
 
 function getEventMapURL(){
-    $mapURL = '';
+    $mapURL = '<a href="https://www.google.com/maps/place/3333+Sunnybank+Ln,+Carmichael,+CA+95608/@38.6245253,-121.3070752,17z/data=!4m2!3m1!1s0x809addcb22c9915b:0x7f0b1b875c6d6485" target="_blank" >(map)</a>';
     //$mapURL = 	'<a href="http://maps.google.com/maps?q=1951+Garden+Highway,+Sacramento,+CA&oe=utf-8&hnear=1951+Garden+Hwy,+Sacramento,+California+95833&gl=us&t=m&z=16" target="_blank">(map)</a>';
     
     return $mapURL;
