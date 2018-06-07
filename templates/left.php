@@ -24,15 +24,14 @@ Sacramento, CA 95815<br>
 
 <div id="sponsor-logos">
 	<h3>Our Sponsors:</h3>
-	<p><img style="width:220px;" src="/images/sponsors/FVBE_logo.jpg" /></p>
-	<p><img style="width:220px;" src="/images/sponsors/2Glogo.jpg" /></p>
-	<p><img style="width:220px;" src="/images/sponsors/Gilbert.jpg" /></p>
-	<p><img style="width:220px;" src="/images/sponsors/NielsenLogo.jpg" /></p>
-	<p><img style="width:220px;" src="/images/sponsors/DolphinScuba.png" /></p>
-	<!--
-	<p style="height:120px;width:220px;background-color:white;"><img style="width:220px;position:relative;top:32px" src="/images/sponsors/Comstocks.png" /></p>
-	-->
-	<p><img style="width:220px;" src="/images/sponsors/janpro.jpeg" /></p>
-	<p><img style="width:220px;" src="/images/sponsors/LPAS_logo.jpeg" /></p>
+	<p><a target="_blank" href="https://www.ercafricatravel.com/" ><img style="width:220px;" src="/images/sponsors/ERCtravel.png" /></a></p>
+	<p><a target="_blank" href="https://www.fvbe.info/" ><img style="width:220px;" src="/images/sponsors/FVBE_logo.jpg" /></a></p>
+	<p><a target="_blank" href="http://www.lpas.com/" ><img style="width:220px;" src="/images/sponsors/LPAS_logo.jpeg" /></a></p>
+	<p><a target="_blank" href="https://www.claconnect.com/" ><img style="width:220px;" src="/images/sponsors/CliftonLarsonAllen.jpg" /></a></p>
+	<p><a target="_blank" href="http://www.nccsinc.com/" ><img style="width:220px;" src="/images/sponsors/NorCalCollection.png" /></a></p>
+	<p><a target="_blank" href="http://www.probatecarmichael.com/" ><img style="width:220px;" src="/images/sponsors/GaryHursh.png" /></a></p>
+	<!-- Libaries In Zambia <p><a target="_blank" href="" ><img style="width:220px;" src="/images/sponsors/DolphinScuba.png" /></a></p> -->
+	<p><a target="_blank" href="https://www.comstocksmag.com/" ><img style="width:220px;" src="/images/sponsors/Comstocks.png" /></a></p>
+	<p><a target="_blank" href="http://davidsobon.com/" ><img style="width:220px;" src="/images/sponsors/DSA.png" /></a></p>
 	
 </div>
