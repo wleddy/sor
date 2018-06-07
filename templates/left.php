@@ -31,7 +31,7 @@ Sacramento, CA 95815<br>
 	<p><a target="_blank" href="http://www.nccsinc.com/" ><img style="width:220px;" src="/images/sponsors/NorCalCollection.png" /></a></p>
 	<p><a target="_blank" href="http://www.probatecarmichael.com/" ><img style="width:220px;" src="/images/sponsors/GaryHursh.png" /></a></p>
 	<!-- Libaries In Zambia <p><a target="_blank" href="" ><img style="width:220px;" src="/images/sponsors/DolphinScuba.png" /></a></p> -->
-	<p><a target="_blank" href="https://www.comstocksmag.com/" ><img style="width:220px;" src="/images/sponsors/Comstocks.png" /></a></p>
+	<p><a target="_blank" href="https://www.comstocksmag.com/" ><img style="width:220px;" src="/images/sponsors/ComstocksMag.jpg" /></a></p>
 	<p><a target="_blank" href="http://davidsobon.com/" ><img style="width:220px;" src="/images/sponsors/DSA.png" /></a></p>
 	
 </div>
