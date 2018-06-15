@@ -29,8 +29,8 @@ Sacramento, CA 95815<br>
 	<p><a target="_blank" href="http://www.lpas.com/" ><img style="width:220px;" src="/images/sponsors/LPAS_logo.jpeg" /></a></p>
 	<p><a target="_blank" href="https://www.claconnect.com/" ><img style="width:220px;" src="/images/sponsors/CliftonLarsonAllen.jpg" /></a></p>
 	<p><a target="_blank" href="http://www.nccsinc.com/" ><img style="width:220px;" src="/images/sponsors/NorCalCollection.png" /></a></p>
-	<p><a target="_blank" href="http://www.probatecarmichael.com/" ><img style="width:220px;" src="/images/sponsors/GaryHursh.png" /></a></p>
-	<!-- Libaries In Zambia <p><a target="_blank" href="" ><img style="width:220px;" src="/images/sponsors/DolphinScuba.png" /></a></p> -->
+	<p><a target="_blank" href="http://www.probatecarmichael.com/" ><img style="width:220px;" src="/images/sponsors/GaryHurshLogo.jpg" /></a></p>
+	<p><img style="width:220px;" src="/images/sponsors/LibrariesinZambia.jpg" /></a></p>
 	<p><a target="_blank" href="https://www.comstocksmag.com/" ><img style="width:220px;" src="/images/sponsors/ComstocksMag.jpg" /></a></p>
 	<p><a target="_blank" href="http://davidsobon.com/" ><img style="width:220px;" src="/images/sponsors/DSA.png" /></a></p>
 	
